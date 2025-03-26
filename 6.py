@@ -3,16 +3,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Data setup
-data = {'Barton LLC': 109438.50,
-        'Frami, Hills and Schmidt': 103569.59,
-        'Fritsch, Russel and Anderson': 112214.71,
-        'Jerde-Hilpert': 112591.43,
-        'Keeling LLC': 100934.30,
-        'Koepp Ltd': 103660.54,
-        'Kulas Inc': 137351.96,
-        'Trantow-Barrows': 123381.38,
-        'White-Trantow': 135841.99,
-        'Will LLC': 104437.60}
+data = {'Meghna': 109438.50,
+        'Jamuna': 103569.59,
+        'Padma': 112214.71,
+        'Ciry': 112591.43,
+        'Matadoor': 100934.30,
+        'BrB': 103660.54,
+        'horlicks': 137351.96,
+        'B&H': 123381.38,
+        'Camel': 135841.99,
+        'Pen': 104437.60}
 group_data = list(data.values())
 group_names = list(data.keys())
 group_mean = np.mean(group_data)
@@ -46,9 +46,9 @@ ax.xaxis.set_major_formatter(currency)
 ax.set_xticks([0, 25e3, 50e3, 75e3, 100e3, 125e3])
 fig.subplots_adjust(right=.95)  # Adjust the right margin slightly
 
-print(fig.canvas.get_supported_filetypes())
+#print(fig.canvas.get_supported_filetypes())
 
 # Uncomment this line to save the figure.
-fig.savefig('sales.png', transparent=False, dpi=80, bbox_inches="tight")
+#fig.savefig('sales.png', transparent=False, dpi=80, bbox_inches="tight")
 # Show the plot
-#plt.show()
+plt.show()
