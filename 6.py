@@ -46,5 +46,9 @@ ax.xaxis.set_major_formatter(currency)
 ax.set_xticks([0, 25e3, 50e3, 75e3, 100e3, 125e3])
 fig.subplots_adjust(right=.95)  # Adjust the right margin slightly
 
+print(fig.canvas.get_supported_filetypes())
+
+# Uncomment this line to save the figure.
+fig.savefig('sales.png', transparent=False, dpi=80, bbox_inches="tight")
 # Show the plot
-plt.show()
+#plt.show()
